@@ -7,7 +7,7 @@
 ## Chrome extension
 - Puedes obtener la extension para poder utilizar de manera local o subirla a un servidor aqui:
 
-[JCSpam Chrome Extension](https://github.com/zjostyn/jc-spam-extension)
+[JCSpam Chrome Extension](https://github.com/zjostyn/jcspam-extension)
 
 ## Licence
 This project is licensed under the [MIT License](https://github.com/ADIBzTER/borang/blob/master/LICENSE)
