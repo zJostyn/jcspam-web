@@ -1,27 +1,13 @@
-# Borang | Google Form spammer
-
-## ⚠ Open-source version of Borang is archived
-
-- The existing source code will remain on Github
-
-- Borang will be developed privately
-
-- We hope to meet again with other cool open-source projects!"
+# JCSpam | Google Form spammer
 
 ## About this project
 
-- This open-source project was initially created for students who need to get certain amount of respondents for their survey.
-
-- This repo is for Borang's web-app.
+- Esto fue creado inicialmente mediante Borang, recibira muchas actualizaciones futuras, para ayudar a estudiantes que necesiten rellenar cierta cantidad de formularios.
 
 ## Chrome extension
-- We also provide Chrome Extension which more powerful
+- Puedes obtener la extension para poder utilizar de manera local o subirla a un servidor aqui:
 
-- You can get the source code here: 
-[Borang Chrome Extension repo](https://github.com/adibzter/borang-chrome-extension)
-
-- Install from Chrome Web Store: 
-[Borang Chrome Extension install](https://chrome.google.com/webstore/detail/borang/mokcmggiibmlpblkcdnblmajnplennol)
+[JCSpam Chrome Extension](https://github.com/zjostyn/jc-spam-extension)
 
 ## Licence
 This project is licensed under the [MIT License](https://github.com/ADIBzTER/borang/blob/master/LICENSE)
