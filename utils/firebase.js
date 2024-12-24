@@ -38,24 +38,31 @@ const ensureAuthenticated = async (req, res, next) => {
 };
 
 const getUserByEmail = async (email) => {
-  const usersRef = db.collection('users');
-  const userSnapshot = await usersRef
-    .where('email', '==', email)
-    .limit(1)
-    .get();
+  try {
+    const usersRef = db.collection('users');
+    const userSnapshot = await usersRef
+      .where('email', '==', email)
+      .limit(1)
+      .get();
 
-  if (userSnapshot.empty) {
-    return null;
+    if (userSnapshot.empty) {
+      console.log(`No user found with email: ${email}`);
+      return null;
+    }
+
+    const userDoc = userSnapshot.docs[0];
+    const userData = {
+      id: userDoc.id,
+      ...userDoc.data(),
+    };
+
+    return userData;
+  } catch (error) {
+    console.error('Error retrieving user:', error.message);
+    throw new Error('Failed to retrieve user');
   }
-
-  const userDoc = userSnapshot.docs[0];
-  const userData = {
-    id: userDoc.id,
-    ...userDoc.data(),
-  };
-
-  return userData;
 };
+
 
 const insertUser = async (email) => {
   let userData = {
